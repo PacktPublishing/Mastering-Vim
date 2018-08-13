@@ -15,3 +15,14 @@ Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 
 call plug#end()
+
+" Reasonable indentation defaults.
+set autoindent
+set expandtab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+" Set a colorscheme.
+colorscheme murphy
+
