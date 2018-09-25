@@ -1,0 +1,25 @@
+*commenter.txt* Our first commenting plugin.
+*commenter*
+
+==============================================================================
+CONTENTS                                                  *commenter-contents*
+
+  1. Intro...................................................|commenter-intro|
+  2. Usage...................................................|commenter-usage|
+
+==============================================================================
+1. Intro                                                     *commenter-intro*
+
+Have you ever wanted to comment out a line with only three presses of a
+button? Now you can! A new and wonderful vim-commenter lets you comment out a
+single line in Python quickly!
+
+2. Usage                                                     *commenter-usage*
+
+This wonderful plugin supports the following key bindings:
+
+  gc: toggle comment on a current line
+
+That's it for now. Thanks for reading!
+
+  vim:tw=78:ts=2:sts=2:sw=2:ft=help:norl:
