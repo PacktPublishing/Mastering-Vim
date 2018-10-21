@@ -52,3 +52,33 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
 
 call plug#end()
+
+" noremap ; :           " Use ; in addition to : to type commands.
+
+" noremap <c-u> :w<cr>  " Save using <Ctrl-u> (u stands for update).
+
+" Map arrow keys nothing so I can get used to hjkl-style movement.
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+
+" Immediately add a closing quotes or braces in insert mode.
+" inoremap ' ''<esc>i
+" inoremap " ""<esc>i
+" inoremap ( ()<esc>i
+" inoremap { {}<esc>i
+" inoremap [ []<esc>i
+
+" let mapleader = ','   " Map the leader key to a comma.
+
+" noremap <leader>w :w<cr>  " Save a file with leader-w.
+
+" Set CtrlP working directory to a repository root (with a 
+" fallback to current directory).
+" let g:ctrlp_working_path_mode = 'ra'
+
+" Remap CtrlP actions to be prefixed by a leader key.
+" noremap <leader>p :CtrlP<cr>
+" noremap <leader>b :CtrlPBuffer<cr>
+" noremap <leader>m :CtrlPMRU<cr>
