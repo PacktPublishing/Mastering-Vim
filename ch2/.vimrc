@@ -28,6 +28,8 @@ set wildmode=list:longest,full  " Complete till longest string, then open menu.
 " Plugin-related sections below are commented out. Uncomment them to enable
 " the plugin functionality once you install the plugins to ~/.vim/bundle.
 
+" set runtimepath^=~/.vim/bundle/vim-unimpaired  " Register vim-unimpaired.
+
 " set runtimepath^=~/.vim/bundle/nerdtree  " Register NERDTree.
 " let NERDTreeShowBookmarks = 1   " Display bookmarks on startup.
 " autocmd VimEnter * NERDTree     " Enable NERDTree on Vim startup.
@@ -39,11 +41,14 @@ set wildmode=list:longest,full  " Complete till longest string, then open menu.
 
 " set runtimepath^=~/.vim/bundle/ctrlp.vim  " Register CtrlP.
 
+" set number                     " Display column numbers.
+" set relativenumber             " Display relative column numbers.
+
 set hlsearch                    " Highlight search results.
 set incsearch                   " Search as you type.
 
-" set runtimepath^=~/.vim/bundle/vim-easymotion  " Register EasyMotion
-
 " set runtimepath^=~/.vim/bundle/ack.vim  " Register ack.vim.
+
+" set runtimepath^=~/.vim/bundle/vim-easymotion  " Register EasyMotion
 
 set clipboard=unnamed,unnamedplus  " Copy into system (*, +) registers.
