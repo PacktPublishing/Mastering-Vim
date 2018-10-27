@@ -1,0 +1,24 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Animal	animal.py	/^class Animal(object):$/;"	c
+Cat	animals/cat.py	/^class Cat(animal.Animal):$/;"	c
+Dog	animals/dog.py	/^class Dog(animal.Animal):$/;"	c
+Farm	farm.py	/^class Farm(object):$/;"	c
+Sheep	animals/sheep.py	/^class Sheep(animal.Animal):$/;"	c
+__init__	animal.py	/^    def __init__(self, kind):$/;"	m	class:Animal
+__init__	animals/cat.py	/^    def __init__(self):$/;"	m	class:Cat
+__init__	animals/dog.py	/^    def __init__(self):$/;"	m	class:Dog
+__init__	animals/sheep.py	/^    def __init__(self):$/;"	m	class:Sheep
+__init__	farm.py	/^    def __init__(self):$/;"	m	class:Farm
+add_animal	farm.py	/^    def add_animal(self, animal):$/;"	m	class:Farm
+get_kind	animal.py	/^    def get_kind(self):$/;"	m	class:Animal
+get_kind	animals/cat.py	/^    def get_kind(self):$/;"	m	class:Cat
+get_kind	animals/dog.py	/^    def get_kind(self):$/;"	m	class:Dog
+get_kind	animals/sheep.py	/^    def get_kind(self):$/;"	m	class:Sheep
+main	animal_farm.py	/^def main(animals):$/;"	f
+make_animal	animal_farm.py	/^def make_animal(kind):$/;"	f
+print_contents	farm.py	/^    def print_contents(self):$/;"	m	class:Farm

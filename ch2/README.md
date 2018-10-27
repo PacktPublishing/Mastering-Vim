@@ -36,4 +36,4 @@ Then, uncomment relevant lines in this chapter's `.vimrc`:
 ## \*.py Files
 
 These are Python 3 files, see `../ch1/README.md` for (slightly) more
-infromation.
+information.

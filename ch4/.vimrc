@@ -1,42 +1,100 @@
-" Enable syntax highlighting.
-syntax on
+" => Chapter 1: Getting Started --------------------------------------- {{{
 
-" Language dependent indentation.
-filetype plugin indent on
+syntax on                  " Enable syntax highlighting.
+filetype plugin indent on  " Enable file type based indentation.
 
-" Reasonable indentation defaults.
-set autoindent
-set expandtab
-set shiftwidth=4
-set tabstop=4
-set softtabstop=4
+set autoindent             " Respect indentation when starting a new line.
+set expandtab              " Expand tabs to spaces. Essential in Python.
+set tabstop=4              " Number of spaces tab is counted for.
+set shiftwidth=4           " Number of spaces to use for autoindent.
 
-" Set a colorscheme.
-colorscheme murphy
+set backspace=2            " Fix backspace behavior on most terminals.
 
-" Install vim-plug if it's not already installed.
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.github.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+colorscheme murphy         " Change a colorscheme.
 
-let g:plug_timeout = 300
+" => Chapter 2: Advanced Movement and Navigation ---------------------- {{{
 
-" Manage plugins with vim-plug.
-call plug#begin()
+" Navigate windows with <Ctrl-hjkl> instead of <Ctrl-w> followed by hjkl.
+noremap <c-h> <c-w><c-h>
+noremap <c-j> <c-w><c-j>
+noremap <c-k> <c-w><c-k>
+noremap <c-l> <c-w><c-l>
 
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
-Plug 'christoomey/vim-tmux-navigator'
+set foldmethod=indent           " Indentation-based folding.
+
+set wildmenu                    " Enable enhanced tab autocomplete.
+set wildmode=list:longest,full  " Complete till longest string, then open menu.
+
+" set number                     " Display column numbers.
+" set relativenumber             " Display relative column numbers.
+
+set hlsearch                    " Highlight search results.
+set incsearch                   " Search as you type.
+
+set clipboard=unnamed,unnamedplus  " Copy into system (*, +) registers.
+
+" => Chapter 3: Follow the Leader: Plugin Management ------------------ {{{
+
+" Install vim-plug if it's not already installed (Unix-only).
+" if empty(glob('~/.vim/autoload/plug.vim'))
+"   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs 
+"     \ https://raw.github.com/junegunn/vim-plug/master/plug.vim
+"   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+" endif
+
+call plug#begin()  " Manage plugins with vim-plug.
+
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'mileszs/ack.vim'
-Plug 'scrooloose/nerdtree'
-Plug 'sjl/gundo.vim'
+Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-vinegar'
+
+" noremap ; :           " Use ; in addition to : to type commands.
+
+" noremap <c-u> :w<cr>  " Save using <Ctrl-u> (u stands for update).
+
+" Map arrow keys nothing so I can get used to hjkl-style movement.
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+
+" Immediately add a closing quotes or braces in insert mode.
+" inoremap ' ''<esc>i
+" inoremap " ""<esc>i
+" inoremap ( ()<esc>i
+" inoremap { {}<esc>i
+" inoremap [ []<esc>i
+
+" let mapleader = ','   " Map the leader key to a comma.
+
+" noremap <leader>w :w<cr>  " Save a file with leader-w.
+
+" Set CtrlP working directory to a repository root (with a 
+" fallback to current directory).
+" let g:ctrlp_working_path_mode = 'ra'
+
+" Remap CtrlP actions to be prefixed by a leader key.
+" noremap <leader>p :CtrlP<cr>
+" noremap <leader>b :CtrlPBuffer<cr>
+" noremap <leader>m :CtrlPMRU<cr>
+
+" => Chapter 4: Understanding the Text -------------------------------- {{{
+
+let g:plug_timeout = 300  " Increase vim-plug timeout for YouCompleteMe.
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+noremap <leader>] :YcmCompleter GoTo<cr>
+
+set tags=tags;  " Look for a tags file recursively in parent directories.
+
+" Regenerate tags when saving Python files.
+autocmd BufWritePost *.py silent! !ctags -R &
+
+Plug 'sjl/gundo.vim'
 
 call plug#end()
 
-" Custom plugins mappings.
-noremap <leader>] :YcmCompleter GoTo<cr>
-noremap <f5> :GundoToggle<cr>
+noremap <f5> :GundoToggle<cr>  " Map Gundo to <F5>.
