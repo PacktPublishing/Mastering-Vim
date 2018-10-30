@@ -1,0 +1,6 @@
+# Wait no more than 5 milliseconds when detecting an input
+# sequence, fixes <Escape> behavior in Vim.
+maptimeout 5
+
+# Set $TERM to a value Vim recognizes.
+term screen-256color
