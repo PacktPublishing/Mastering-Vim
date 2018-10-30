@@ -109,4 +109,23 @@ tnoremap <c-h> <c-w><c-h>
 
 Plug 'christoomey/vim-tmux-navigator'
 
+" Use :make to run pylint for Python files.
+autocmd filetype python setlocal makeprg=pylint3\ --reports=n\ --msg-template=\"{path}:{line}:\ {msg_id}\ {symbol},\ {obj}\ {msg}\"\ %:p
+autocmd filetype python setlocal errorformat=%f:%l:\ %m
+
+" Plug 'vim-syntastic/syntastic'
+
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+
+" let g:syntastic_python_pylint_exe = 'pylint3'
+
+" Plug 'w0rp/ale'
+
 call plug#end()
