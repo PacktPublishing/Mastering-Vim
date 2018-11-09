@@ -1,11 +1,10 @@
-" Returns exit code 0 if g:commenter#comment_str exists, prints an error and
-" returns 1 otherwise.
-function! g:commenter#CheckCommentStr()
+" Returns 1 if g:commenter#comment_str exists.
+function! g:commenter#HasCommentStr()
   if exists('g:commenter#comment_str')
-    return 0
+    return 1
   endif
-  echom "vim-commenter doesn't work for this filetype yet"
-  return 1
+  echom "vim-commenter doesn't work for filetype " . &ft . " yet"
+  return 0
 endfunction
 
 " Detect smallest indentation for a range of lines.
@@ -34,7 +33,7 @@ endfunction
 
 " Comment out the current line in Python.
 function! g:commenter#ToggleComment(count)
-  if g:commenter#CheckCommentStr()
+  if !g:commenter#HasCommentStr()
     return
   endif
   let l:start = line('.')
