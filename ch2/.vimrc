@@ -14,6 +14,9 @@ colorscheme murphy         " Change a colorscheme.
 
 " => Chapter 2: Advanced Movement and Navigation ---------------------- {{{
 
+packloadall                     " Load all plugins.
+silent! helptags ALL            " Load help files for all plugins.
+
 " Navigate windows with <Ctrl-hjkl> instead of <Ctrl-w> followed by hjkl.
 noremap <c-h> <c-w><c-h>
 noremap <c-j> <c-w><c-j>
@@ -25,30 +28,19 @@ set foldmethod=indent           " Indentation-based folding.
 set wildmenu                    " Enable enhanced tab autocomplete.
 set wildmode=list:longest,full  " Complete till longest string, then open menu.
 
-" Plugin-related sections below are commented out. Uncomment them to enable
-" the plugin functionality once you install the plugins to ~/.vim/bundle.
+" Plugin-related settings below are commented out. Uncomment them to enable
+" the plugin functionality once you download the plugins.
 
-" set runtimepath^=~/.vim/bundle/vim-unimpaired  " Register vim-unimpaired.
-
-" set runtimepath^=~/.vim/bundle/nerdtree  " Register NERDTree.
 " let NERDTreeShowBookmarks = 1   " Display bookmarks on startup.
 " autocmd VimEnter * NERDTree     " Enable NERDTree on Vim startup.
 " Autoclose NERDTree if it's the only open window left.
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&
 "   \ b:NERDTree.isTabTree()) | q | endif
 
-" set runtimepath^=~/.vim/bundle/vim-vinegar  " Register vim-vinegar.
-
-" set runtimepath^=~/.vim/bundle/ctrlp.vim  " Register CtrlP.
-
-" set number                     " Display column numbers.
-" set relativenumber             " Display relative column numbers.
+set number                      " Display column numbers.
+set relativenumber              " Display relative column numbers.
 
 set hlsearch                    " Highlight search results.
 set incsearch                   " Search as you type.
-
-" set runtimepath^=~/.vim/bundle/ack.vim  " Register ack.vim.
-
-" set runtimepath^=~/.vim/bundle/vim-easymotion  " Register EasyMotion
 
 set clipboard=unnamed,unnamedplus  " Copy into system (*, +) registers.
