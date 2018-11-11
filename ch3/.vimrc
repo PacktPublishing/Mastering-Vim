@@ -25,8 +25,8 @@ set foldmethod=indent           " Indentation-based folding.
 set wildmenu                    " Enable enhanced tab autocomplete.
 set wildmode=list:longest,full  " Complete till longest string, then open menu.
 
-" set number                     " Display column numbers.
-" set relativenumber             " Display relative column numbers.
+set number                      " Display column numbers.
+set relativenumber              " Display relative column numbers.
 
 set hlsearch                    " Highlight search results.
 set incsearch                   " Search as you type.
