@@ -37,8 +37,8 @@ set wildmode=list:longest,full  " Complete till longest string, then open menu.
 " autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") &&
 "   \ b:NERDTree.isTabTree()) | q | endif
 
-set number                      " Display column numbers.
-set relativenumber              " Display relative column numbers.
+" set number                      " Display column numbers.
+" set relativenumber              " Display relative column numbers.
 
 set hlsearch                    " Highlight search results.
 set incsearch                   " Search as you type.
