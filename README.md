@@ -46,7 +46,7 @@ With the following software and hardware list you can run all code files present
 
 
 ### Related products
-* Mastering Visual Studio 2017 [[Packt]](https://india.packtpub.com/in/application-development/mastering-visual-studio-2017 target="_blank" rel="noopener noreferrer?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-787-28190-6)
+* Mastering Visual Studio 2017 [[Packt]](https://india.packtpub.com/in/application-development/mastering-visual-studio-2017?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-787-28190-6)
 
 * The Modern C# Challenge  [[Packt]](https://india.packtpub.com/in/application-development/modern-c-challenge-0?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-789-53542-5)
 
