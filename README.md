@@ -10,14 +10,15 @@ This is the code repository for [Mastering Vim](https://www.packtpub.com/applica
 Vim is a ubiquitous text editor that can be used for all programming languages. It has an extensive plugin system and integrates with many tools. Vim offers an extensible and customizable development environment for programmers, making it one of the most popular text editors in the world.
 
 This book covers the following exciting features:
-Install or update Vim 8 on every major platform and set up GVim 
-Become efficient at navigating and editing text 
-Discover multiple ways of working with and organizing plugins 
-Navigate through Vim’s extensive undo tree 
-Explore and tailor Vim UI and organize vimrc 
-Uncover niche Vim plugins and pick the best one for the job 
-Write scripts to compliment your workflow using Vimscript 
-Explore why Neovim matters 
+<ul>
+  <li>Install or update Vim 8 on every major platform and set up GVim </li>
+  <li>Become efficient at navigating and editing text </li>
+  <li>Discover multiple ways of working with and organizing plugins </li>
+  <li>Navigate through Vim’s extensive undo tree </li>
+  <li>Explore and tailor Vim UI and organize vimrc </li>
+  <li>Uncover niche Vim plugins and pick the best one for the job </li>
+  <li>Write scripts to compliment your workflow using Vimscript </li>
+  <li>Explore why Neovim matters </li>
 
 If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1-789-34109-4) today!
 
@@ -46,14 +47,13 @@ With the following software and hardware list you can run all code files present
 
 
 ### Related products
-* Mastering Visual Studio 2017 [[Packt]](https://india.packtpub.com/in/application-development/mastering-visual-studio-2017?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-787-28190-6)
+* Mastering Visual Studio 2017 [[Packt]](https://india.packtpub.com/in/application-development/mastering-visual-studio-2017?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1787281906)
 
 * The Modern C# Challenge  [[Packt]](https://india.packtpub.com/in/application-development/modern-c-challenge-0?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-789-53542-5)
 
 
 ## Get to Know the Author
-**Ruslan Osipov**
-Ruslan Osipov is a software engineer at Google, an avid traveler, and a part-time blogger. He is a self-taught engineer. He started publishing personal Vim notes in 2012, and became increasingly interested in the intricacies of the editor and its applications in optimizing development workflows.
+**Ruslan Osipov** is a software engineer at Google, an avid traveler, and a part-time blogger. He is a self-taught engineer. He started publishing personal Vim notes in 2012, and became increasingly interested in the intricacies of the editor and its applications in optimizing development workflows.
 
 
 
