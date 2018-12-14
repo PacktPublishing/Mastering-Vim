@@ -20,7 +20,7 @@ This book covers the following exciting features:
   <li>Write scripts to compliment your workflow using Vimscript </li>
   <li>Explore why Neovim matters </li>
 
-If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1-789-34109-4) today!
+If you feel this book is for you, get your [copy](https://www.amazon.com/dp/1789341094) today!
 
 <a href="https://www.packtpub.com/?utm_source=github&utm_medium=banner&utm_campaign=GitHubBanner"><img src="https://raw.githubusercontent.com/PacktPublishing/GitHub/master/GitHub.png" 
 alt="https://www.packtpub.com/" border="5" /></a>
@@ -38,7 +38,7 @@ call plug#end()
 **Following is what you need for this book:**
 Mastering Vim is written for beginner, intermediate, and expert developers.The book will teach you to effectively embed Vim in your daily workflow. No prior experience with Python or Vim is required.
 
-With the following software and hardware list you can run all code files present in the book (Chapter 1-1).
+With the following software and hardware list you can run all code files present in the book (Chapter 1-10).
 ### Software and Hardware List
 | Chapter | Software required | OS required |
 | -------- | ------------------------------------ | ----------------------------------- |
@@ -49,7 +49,7 @@ With the following software and hardware list you can run all code files present
 ### Related products
 * Mastering Visual Studio 2017 [[Packt]](https://india.packtpub.com/in/application-development/mastering-visual-studio-2017?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1787281906)
 
-* The Modern C# Challenge  [[Packt]](https://india.packtpub.com/in/application-development/modern-c-challenge-0?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1-789-53542-5)
+* The Modern C# Challenge  [[Packt]](https://india.packtpub.com/in/application-development/modern-c-challenge-0?utm_source=github&utm_medium=repository&utm_campaign=) [[Amazon]](https://www.amazon.com/dp/1789535425)
 
 
 ## Get to Know the Author
