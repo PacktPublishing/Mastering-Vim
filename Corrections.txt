@@ -1,0 +1,242 @@
+# Chapter 1
+1) P.21
+[Part]
+In this section. you can read more about the graphical version of Vim in Vanilla Vim vs GVim.
+
+[Confirmation]
+I think that the text breaks in "In this section." and is not connected to the second sentence.
+
+2) P.33
+[Part]
+This will save the changes in a new file, and will change the current open file to a new one. Try it, using the following command:  :w animal_farm_2.py
+
+[Confirmation]
+Executing ":w filename" does not change the open file. It only saves the file under a different name. If you want to change an open file and save it under a different name, use ":saveas".
+
+3) P.43
+[Part]
+old: 
+if !isdirectory("$HOME/.vim/undodir")
+    call mkdir("$HOME/.vim/undodir", "p")
+
+new: 
+if !isdirectory(expand("$HOME/.vim/undodir"))
+  call mkdir(expand("$HOME/.vim/undodir"), "p")
+
+[Confirmation]
+Environment variables in the string passed to "isdirectory()" are not expanded. In order to do this, it is necessary to expand by "expand" beforehand.
+
+4) P.43
+[Part]
+old: 
+set undodir="$HOME/.vim/undodir"
+
+new: 
+set undodir=$HOME/.vim/undodir
+
+[Confirmation]
+If there are double quotes(â€ â€), it will be commented and the set value of "undodir" will be empty.
+
+5) P.44
+[Part]
+old: 
+If you're using Windows, replace the directories with %USERPROFILE%\_vim\undodir
+
+new: 
+If you're using Windows, replace the directories with %USERPROFILE%\vimfiles\undodir
+
+[Confirmation]
+Windows Vim directory is not _vim but vimfiles?
+
+# Chapter 2
+1) P.53
+[Part]
+old: 
+line 1 is the current cursor position
+
+new: 
+line 30 is the current cursor position
+
+[Confirmation]
+If you look at the screenshot on page 52, it might be "line 30"?
+
+2) P.69
+[Part]
+expr allows for a regular-expression based folding.
+
+[Confirmation]
+"expr" is a way of using expressions in Vim and has nothing to do with regular expressions.
+
+3) P.93
+[Part]
+0  accesses the last deleted text,  1  the one before it, and so on
+
+[Confirmation]
+Deleted content will be entered from 1 to 9.
+0 is the contents of yank (Copy).
+
+# Chapter 4
+1) P.130
+[Part]
+old: 
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+
+new: 
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py' }
+
+[Confirmation]
+It seems that YouCompleteMe have been transferred to org now.
+(https://github.com/ycm-core/YouCompleteMe)
+
+2) P.139
+[Part]
+old: 
+`autocmd BufWritePost *.cpp *.h silent! !ctags -R &`
+
+new: 
+`autocmd BufWritePost *.cpp,*.h silent! !ctags -R &`
+
+[Confirmation]
+Isn't comma(,) necessary before "*.h"?
+
+# Chapter 5
+1) P.157
+[Part]
+old:
+The files from this example are available from  https://github.com/PacktPublishing/Mastering-Vim/tree/master/Chapter05/animal_farm move to previous line you can follow this section with any similar but somewhat different files.
+
+new:
+The files from this example are available from https://github.com/PacktPublishing/Mastering-Vim/tree/master/Chapter05/animal_farm
+
+2) P.159
+[Part]
+old: 
+$ vimdiff animals/cat.py animals/cat.py animals/sheep.py
+
+new: 
+$ vimdiff animals/cat.py animals/dog.py animals/sheep.py
+
+[Confirmation]
+If you look at the screenshot on page 160, it might be "animals/dog.py"?
+
+3ï¼‰P.175
+[Part]
+old: 
+Ctrl + w, Ctrl + c sends Ctrl + c to the running command in a Terminal.
+
+new: 
+Ctrl + c sends Ctrl + c to the running command in a Terminal.
+
+[Confirmation]
+If you want to send Ctrl + c to the running command, just enter Ctrl+c.Ctrl + w, Ctrl + c forces a running command to stop.
+For example, if you sleep 100 in a shell on the terminal, C-c stops the sleep command, but C-w C-c ends the terminal.
+
+# Chapter 6
+1) P.196 table
+[Part]
+old: 
+\_	Any character, including end of the line
+
+new: 
+\_.	Any character, including end of the line
+
+[Confirmation]
+Isn't period(.) necessary after "\_"?
+
+2) P.199
+[Part]
+However, in no magic mode, you'd have to escape each one of those: /\^\.\*\$ .
+
+[Confirmation]
+This is an explanation about very nomagic mode(:help /\V). In no magic mode, you don't need to escape ^ and $.
+
+# Chapter 7
+1) P.228
+[Part]
+It's useful to find ways to compliment your style by enhancing and optimizing the way you do
+things in Vim.
+
+[Confirmation]
+Isn't it "complement" instead of an "compliment"?
+
+2) P.230
+[Part]
+old: 
+Plug 'Lokaltog/vim-easymotion'
+
+new: 
+Plug 'easymotion/vim-easymotion'
+
+[Confirmation]
+It looks like an old repository.
+(https://github.com/easymotion/vim-easymotion)
+
+3) P.230
+[Part]
+old: 
+Plug 'kien/ctrlp.vim'
+
+new: 
+Plug 'ctrlpvim/ctrlp.vim'
+
+[Confirmation]
+It looks like an old repository.
+(https://github.com/ctrlpvim/ctrlp.vim)
+
+# Chapter 8
+1) P.240
+[Part]
+old: 
+echo g:animal_name . (g:is_cat ? 'in'is a cat' : 'in'is something else')
+
+new: 
+echo g:animal_name . (g:is_cat ? ' is a cat' : ' is something else')
+
+[Confirmation]
+It looks like it contains unwanted characters(in').
+
+2) P.256
+[Part]
+old:
+echo animal . ' says hello'
+execute 'echo ' . animal . ' says hello'
+
+new:
+echo animal . ' says hello'
+execute 'echo animal ''says hello'''
+
+This also requires a new info box:
+
+Quotes around are needed as otherwise this command would :echo the contents of each variable (cat, says, hello). If there are no variables, an error occurs.
+
+3) P.264
+[Part]
+old: 
+function! g:commenter#Comment()
+
+new: 
+function! commenter#Comment()
+
+[Confirmation]
+The only scope word you can use for function name is "s:", so you don't need "g:". If it does, it is simply ignored.
+
+4) P.265
+[Part]
+old: 
+" Comment out the current line in Python.
+function! g:commenter#Comment()
+
+new: 
+" Comment out the current line in Python.
+function! g:Comment()
+
+[Confirmation]
+There are two functions with the same comment, and the code appears to overlap.
+
+# Chapter 10
+1) P.300
+[Part]
+- Learning resources
+
+[Confirmation]
+I'm afraid this is not one of the bullets, but a heading.
