@@ -1,8 +1,3 @@
-## $5 Tech Unlocked 2021!
-[Buy and download this Book for only $5 on PacktPub.com](https://www.packtpub.com/product/mastering-vim/9781789341096)
------
-*If you have read this book, please leave a review on [Amazon.com](https://www.amazon.com/gp/product/1789341094).     Potential readers can then use your unbiased opinion to help them make purchase decisions. Thank you. The $5 campaign         runs from __December 15th 2020__ to __January 13th 2021.__*
-
 # Mastering Vim
 
 <a href="https://www.packtpub.com/application-development/mastering-vim?utm_source=github&utm_medium=repository&utm_campaign=9781789341096"><img src="https://www.packtpub.com/sites/default/files/cover_11044.png" alt="Mastering Vim" height="256px" align="right"></a>
